@@ -4,6 +4,7 @@
 package br.com.mcoder.dao;
 
 import br.com.mcoder.dao.generic.jpa.GenericJpaDAO;
+import br.com.mcoder.dao.generic.jpa.GenericJpaDB1DAO;
 import br.com.mcoder.dao.jpa.IVendaJpaDAO;
 import br.com.mcoder.domain.jpa.VendaJpa;
 import br.com.mcoder.exceptions.DAOException;
@@ -15,7 +16,7 @@ import br.com.mcoder.exceptions.TipoChaveNaoEncontradaException;
  * Classe utilizada somente no teste para fazer a exclusão das vendas
  *
  */
-public class VendaExclusaoJpaDAO extends GenericJpaDAO<VendaJpa, Long> implements IVendaJpaDAO {
+public class VendaExclusaoJpaDAO extends GenericJpaDB1DAO<VendaJpa, Long> implements IVendaJpaDAO {
 
 	public VendaExclusaoJpaDAO() {
 		super(VendaJpa.class);

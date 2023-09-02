@@ -4,6 +4,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
  http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
 	version="2.1">
+	
 	<persistence-unit name="exemplo-jpa" transaction-type="RESOURCE_LOCAL">
 		<properties>
 			<property name="javax.persistence.jdbc.url"	value="jdbc:mysql://localhost:3306/aulajpa?useSSL=FALSE&amp;serverTimezone=UTC" />
@@ -19,4 +20,58 @@
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
 		</properties>
 	</persistence-unit>
+	<persistence-unit name="Postgre1">
+		
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		
+		<class>br.com.mcoder.domain.jpa.ClienteJpa</class>
+		<class>br.com.mcoder.domain.jpa.ProdutoJpa</class>
+		<class>br.com.mcoder.domain.jpa.VendaJpa</class>
+		<class>br.com.mcoder.domain.jpa.ProdutoQuantidadeJpa</class>
+		
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		
+		<properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/vendas_online1" /> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
+            <property name="javax.persistence.jdbc.password" value="4780" /> <!-- DB Password -->
+
+	    	<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/> <!-- DB Dialect -->
+            <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
+            
+            <property name="hibernate.show_sql" value="true" /> <!-- Show SQL in console -->
+            <property name="hibernate.format_sql" value="true" /> <!-- Show SQL formatted -->
+        </properties>
+        
+	</persistence-unit>
+	
+	
+	<persistence-unit name="Postgre2">
+		
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		
+		<class>br.com.mcoder.domain.jpa.ClienteJpa</class>
+		<class>br.com.mcoder.domain.jpa.ProdutoJpa</class>
+		<class>br.com.mcoder.domain.jpa.VendaJpa</class>
+		<class>br.com.mcoder.domain.jpa.ProdutoQuantidadeJpa</class>
+		
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		
+		<properties>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/vendas_online2" /> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
+            <property name="javax.persistence.jdbc.password" value="4780" /> <!-- DB Password -->
+
+	    	<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/> <!-- DB Dialect -->
+            <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
+            
+            <property name="hibernate.show_sql" value="true" /> <!-- Show SQL in console -->
+            <property name="hibernate.format_sql" value="true" /> <!-- Show SQL formatted -->
+        </properties>
+        
+	</persistence-unit>
+	
+	
 </persistence> 

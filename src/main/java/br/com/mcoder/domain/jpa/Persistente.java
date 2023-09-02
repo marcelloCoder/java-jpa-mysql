@@ -1,7 +1,7 @@
-package br.com.mcoder.dao;
+package br.com.mcoder.domain.jpa;
 
 /**
-
+ * @author rodrigo.pires
  *
  * Classe que representa todas as entidades ou objetos da aplicação que seram salvas no banco de dados
  */

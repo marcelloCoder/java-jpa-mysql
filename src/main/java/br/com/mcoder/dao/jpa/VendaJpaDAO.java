@@ -9,6 +9,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 import br.com.mcoder.dao.generic.jpa.GenericJpaDAO;
+import br.com.mcoder.dao.generic.jpa.GenericJpaDB1DAO;
 import br.com.mcoder.domain.jpa.ClienteJpa;
 import br.com.mcoder.domain.jpa.ProdutoJpa;
 import br.com.mcoder.domain.jpa.VendaJpa;
@@ -16,7 +17,7 @@ import br.com.mcoder.exceptions.DAOException;
 import br.com.mcoder.exceptions.TipoChaveNaoEncontradaException;
 
 
-public class VendaJpaDAO extends GenericJpaDAO<VendaJpa, Long> implements IVendaJpaDAO {
+public class VendaJpaDAO extends GenericJpaDB1DAO<VendaJpa, Long> implements IVendaJpaDAO {
 
 	public VendaJpaDAO() {
 		super(VendaJpa.class);

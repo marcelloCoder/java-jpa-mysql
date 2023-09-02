@@ -12,7 +12,7 @@ import java.util.Set;
 import anotacao.ColunaTabela;
 import anotacao.Tabela;
 import anotacao.TipoChave;
-import br.com.mcoder.dao.Persistente;
+import br.com.mcoder.domain.jpa.Persistente;
 
 
 @Tabela("TB_VENDA")

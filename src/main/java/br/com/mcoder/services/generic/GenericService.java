@@ -6,8 +6,8 @@ package br.com.mcoder.services.generic;
 import java.io.Serializable;
 import java.util.Collection;
 
-import br.com.mcoder.dao.Persistente;
 import br.com.mcoder.dao.generic.IGenericDAO;
+import br.com.mcoder.domain.jpa.Persistente;
 import br.com.mcoder.exceptions.DAOException;
 import br.com.mcoder.exceptions.MaisDeUmRegistroException;
 import br.com.mcoder.exceptions.TableException;

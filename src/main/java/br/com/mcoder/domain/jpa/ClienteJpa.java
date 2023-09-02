@@ -11,8 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import br.com.mcoder.dao.Persistente;
-
 
 @Entity
 @Table(name = "TB_CLIENTE")

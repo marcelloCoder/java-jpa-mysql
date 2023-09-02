@@ -1,13 +1,13 @@
 package br.com.mcoder.dao.generic;
 
-import br.com.mcoder.dao.Persistente;
+import java.io.Serializable;
+import java.util.Collection;
+
+import br.com.mcoder.domain.jpa.Persistente;
 import br.com.mcoder.exceptions.DAOException;
 import br.com.mcoder.exceptions.MaisDeUmRegistroException;
 import br.com.mcoder.exceptions.TableException;
 import br.com.mcoder.exceptions.TipoChaveNaoEncontradaException;
-
-import java.io.Serializable;
-import java.util.Collection;
 
 /**
 
